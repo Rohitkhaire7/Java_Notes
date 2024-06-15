@@ -1,0 +1,112 @@
+------------------------------------- 7 June 2024 -----------------------------------------------------------
+
+> java is class based high level object oriented programming language invented by the james gosline in 1991
+> main purpose of java is writes one and run anywhere 
+> First version of java in JDK1.0 which is release by Sun Microsystem In 1996
+
+# Features of java. 
+> Object Oriented:- java is object oriented programming language, we cant run the java program without using the class and object.
+> Simple language:- Java is Simple write and from java features like pointer and operator overloading is also remove.
+> Robust:- java has its own exception handling features as well as the java has automatic garbage collection system.
+> Portable:- java Is portable language that means we can run the java code in one machine and run it on another machine without doing any changes.
+> platform independent:- java is platform independent language, we can write a program in one platform and run on another platform (platform means the operating system- we can write a program in windows and run it on Linux, unix, mac without doing anychanges.)
+> Secure:- Java is secure language, by default java member are private, also java program is virus free.
+> Compile and interpreted :- java Is use both of mechanism like compile and interpreter, firstly it compile the code and create a byte code after that using bytecode interpreter gives an output.
+> distributed Language:- java is distributed language that means we can Run and build java application is distributed system using network for that java uses protocol like HTTPs, FTTP, etc.
+> dynamic:- java is Dynamic Language we can do the change in java program at run time.
+> Multi-Threaded :- Java support the mechanism of Multithread effectively.
+
+
+OPPS concept which are in java 
+
+@. Class:
+> Java is Collection of Object also its called the Blueprint of the Object, Class didn't allocate any space into the memory.
+	Class Class_name
+	{
+		------
+		------  class variable
+		
+		------
+		------ Class method 
+		------
+	}
+> class is contain the class member variable and member methods 
+
+
+@. Object: 
+> object is instance of the object, at the time when we create a object of specific class it allocate space in to memory as required.
+> by using new keyword we create the object. 
+
+
+@. Abstraction:-
+> Abstraction is process of hiding the process of implementation and only shows the special feature to the client or user. 
+> we can achieve the abstraction using Abstract class and interface
+
+#. abstract class
+> abstract is a class which has been declare as abstract i.e. abstract class Class_Name
+> abstract we can't create the object of abstract class but we can create the reference of abstract class
+> extendation is must of abstract class without extend the abstract class in the sub-class we can't use its features and properties 
+> abstract may contain the abstract as well as the non abstract method/
+> if class contain the partial implementation then we should declare the class as abstract
+
+> example:- 
+abstract class valuedetails{
+public int value;
+
+abstract void setValue();
+abstract void getValue();
+}
+class demo extends valueDetails{
+
+setValue(int x){
+
+value= x;
+}
+getValue()
+{
+return value;
+}
+
+}
+
+class test{
+public static void main(String Args[])
+{
+demo d = new demo();
+d.setValue(300);
+System.out.println(d.getValue());
+}
+}
+
+
+#. interface
+> interface is just like a abstract class, but its only contain the abstract and public
+> in interface we only declare the method,
+> the class in which interface implements that class interfaces method has to be define.
+> to add the features of interface in to class we use the keyword implements 
+> the method of interfaces are public and abstract
+
+
+@. Inheritance 
+
+>inheritance is the process of hiding the implementation process from the client and only show some features which are need.
+> there are 4 types of inheritance Simple/ Single Inheritance, Multilevel inheritance, multiple inheritance, hierarchical inheritance.
+
+#. single/ Simple inheritance:-
+> in single or simple inheritance there are only one super-class and one sub-class which extends that super-class.
+> ex. Super-class ---> Sub-class
+
+# Multilevel inheritance:-
+> multilevel inheritance is the inheritance where one super-class and more than one sub-class that they extends each other.
+>  ex. super-class ---> sub-class1 ---> sub-class3
+
+#. multiple inheritance:- 
+> in multiple inheritance there is more than one super-class and that extend into one sub-class
+> java didn't support the multilevel inheritance because of the memory duplication problem, in some time both or more super-class has the same name method then compiler got confuse to which method he has called that why java didn't support the multilevel inheritance.
+
+#. hierarchical inheritance:-
+> hierarchical inheritance is a inheritance in which has a one super-class and multiple sub-class which are extend directly to that super-class. 
+
+
+
+@. Encapsulation:- Encapsulation is process of wrapping the member variable and member method in one unit is called the encapsulation. 

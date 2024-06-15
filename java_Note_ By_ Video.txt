@@ -1,0 +1,227 @@
+#. What is java 
+-> Java is a class based high level object oriented programming language, developed by james gosline in the year 1991.
+-> write ones run anywere - main purpose of java
+-> java is platform independant language 
+-> first version of java jdk1.0 was release on the year 23 january 1996 by sun microsystem. 
+-> syntax of java class
+	class class_Name
+		{
+			public static void main(string args[])
+				{
+					system.out.print("Hello World");
+
+				}
+		}
+
+
+
+#. Features of java
+> object oriented - we can not do the programming without using class and object
+> platform independnt - java is write ones and run anywere, we can write in any platform and run on another system.
+> simple language - to make a java simple team remove pointer and operator overloading thing from java which is in c & C++
+> secure - java member are private bydefault, java program is virus free
+> portable - we can write a program and create a byte code, that byte code we can run anywere
+> compiled and interpreated- java is use compile and interpreater both of 
+> Robust - java has inbuild exception handling method, automatic garbage collection
+> Distributed language - java distributed programming language, we can create a discrubuted application
+ using java language, java is using a protocal http and fttp for networking
+> multithreaded :- all thread share the same memory spaces, they do not wait for another thread to end.
+> performance:- high performance language - because of bytecode, bytecode is run/execute faster 
+> dynamic :- we can make change at run time
+> 
+
+
+
+
+
+#. Class and object
+
+$. Class
+
+> Class is collection of Object.
+> Class is doesn't take any space on memory
+> class is also called a blueprint of object
+> class has 2 type (predefined and user defined class)
+	Predefined class- Scanner, System, String)
+	Userdefined class- user can gives the name, value, method to the class
+> User Defined class - a class which are written by java programmer is called a user defined class
+
+	class Class_Name
+	{
+		-----
+		-----	Data/ variable 
+
+		-----
+		----- Function/ method
+		-----
+}
+
+$. Object
+
+> object is a instance of class that execute the class
+> ones a object create its takes space in memory like a other variable 
+	
+	syntax Class_Name obj_Name = new Class_Name()
+			student s1 = new student();
+
+#. Abstraction
+
+> abstraction is a process of hiding impleamentation details from users  and only shows the highlighted set provide to the users.
+
+>Advantages of abstraction:- security & enhancement 
+
+> to do the abstraction we do 2 type:- abstraction using abstract class & interfaces
+
+
+#. Abstract Class
+
+> we can not create a object of abstract class.
+> class which contain the abstract keyword its in declaration is called the abstract class
+> its may or may not contain the abstract method
+> it can have abstract as well as non-abstract method
+> to use the features of abstract class we need to extend it into child class using extend keyword.
+> if a class contain a partial implementation then we should declare a class as abstract
+
+
+#. interfaces
+
+> interface is just like a class, which contain only abstract method, 
+> collection of abstract method is called a interface
+> to achive the interface we need to implement it
+> interface method bydefault public and abstract
+> interface is nothing but deals between client and developer
+
+
+
+Class is collection of object, also its a called the blueprint of object, at the time of define the class its didn't take any memory. 
+in java class has 2 type- predefine class and userdefined class, class which are already declare and define by language,
+userdefine class- the class which are declare and define by the programmer is called the userdefined class
+class contain data as well as the methods
+
+
+object is a instances of class, we can create a object using new keyword, when object is created its takes a space in memory which are required.
+syntax of creating object : class_Name object_name = new Class_Name();
+
+abstraction is a process of hiding the implementation details and process and only shows the feature is called a abstraction. 
+we can achive the abstraction using 2 types:- abstract class & interfaces
+
+Abstract class- to create a abstract class we need to declare a class by using keyword abstract, we cannot create a object of abstract class
+to use the the features of abstract class we need to extend that into another class which has been child of that abstract class
+abstract may or may not be contain the abstract method, also abstract class have been abstract as well as the non-abstract methods
+to extend the abstract class into child class we need to use keyword extends 
+
+interfaces:- interface is like a medium between client and developer, its only contain the method which are only declare not defines, we can implements 
+interface into the class using implements keywords, method whicha are declare into interface are abstract as well as the public.
+
+
+
+Inheritance:-  when we construct the new class from an existing class in such way that new class access the features and properties of existing class. 
+
+> in java extends keyword is used to perform the inheritance
+> its provide code reusability
+> we can't access private member thought the inheritance 
+> A subclass contain all the features and properties of super class so we dont need to create a object of super class we directly create the object of sub class. 
+> method overriding is only possible using inheritance 
+
+
+#. Simple/ Single Inheritance
+>in single or simple Inheritance there is only one super class and one subclass
+
+#. multilevel inheritance 
+> in multilevel Inheritance there is one super class and more than one sub-class which extends each other in order
+  super-class --> sub-class 1 --> sub-class 2 --> sub-class3
+
+#. multiple inheritance 
+> in multiple inheritance there is more than one super class and one sub-class which extends that super-class in one is called the multiple inheritance 
+> Super class1       super-class2   Super-class 3
+	|		   |		  |
+	|		   |		  |
+	-----------------------------------
+		     |
+		Sub-Class
+
+> java didn't support the multiple inheritance because the problem of memory duplication if superclass contain the same method then the subclass has both of that so the compiler got confuse which one he has to called.
+
+#. hierarchical inheritance 
+> in hierarchical inheritance there is only one super-class and more than one sub-class which extends that super-class separately to each 
+
+
+
+& Polymorphism
+> polymorphism is Greek word which mean one object has different behavior 
+> Type of polymorphism 
+	1) Compile time polymorphism - method overloading
+	2) run time polymorphism - method overriding 
+
+#. compile time polymorphism: 
+> a polymorphism is exist at the time of compilation is called the compile time polymorphism or static polymorphism 
+	Method overload- if a class contain more than one method having same name but different parameter is called the method overloading 
+
+#. Run time polymorphism:
+> A polymorphism which is exists at the time of execute the program is called the run time polymorphism.
+	Method overriding:- whenever we write a method in super-class, as well as in the sub-class in such a way method name and parameter must be same is called the method overriding 
+> we achieve the method overriding using @override keyword we have to use
+
+
+
+&. Encapsulation:- 
+> Encapsulatin is mechanism through which we can wrapping the data member and member method of class in a single unit is called the encapsiulation 
+> Declare the class member variable as a private.
+> declare the class member method as a private
+
+> class is best method of encapsulation 
+ 
+
+
+
+Java Coding Standard:-
+> any java program must contain the package. 
+> all class name are meaning full name is must.
+> method name is also the meaning full. 
+
+
+#. This keyword,
+> this keyword refer to the current object inside the method. 
+> whenever we have a local variable and the instance variable both are same then our runtime jvm get confuse that which one is local variable and which one is instance variable, to avoid this problem we should use the this keyword
+> it is also used when we want to call the default constructor of its own class. 
+> this keyword is called the default constructor of same class or object
+> its also called the parameterize constructor of its own class
+
+
+
+Super Keyword
+> super keyword refer to the object of super class.
+> it is used when we want to call the super class variable, method and constructor through the subclass object. 
+
+> when the super class and subclass variable and method name are both are same then it can be used only. 
+> to avoid the confusion between the super class and subclass variable and method that has same name we should use super keyword 
+> we can access the variable of super class using the super keyword
+> we can also call the method of super class using the super class
+> we can also call the constructor of super class using the super keyword
+
+
+#. String
+
+> String is a object that allows us to store sequence of Character which may contain alpha numeric value enclose by using double quote ("Rohit Khaire 73878883874")
+> String are immutable in java:- we can not change the String object in java.
+> it contain method that can perform certain operation on string 
+
+> there are 2 way to create a string object
+  	String literal 
+	String new keyword
+# String Methods
+> CharAt(): its return the index of string if the specified character is present into that string 
+> Concat(): append the String to the end of another String 
+> contains(): is check if given set of character is present in the given String or not.
+> equals(): is check 2 String and return true if string is same otherwise false.
+> indexOf(): return the index of char which are specified into string. 
+> isEmpty(): check whether the string is empty or not.
+> join(): join two or more string with specified separator.
+> length(): return the length of Specified String.
+> matches(): return true if given string is as per the Regular expression which are given.
+> replace(): replace the specified char or set of char by the given value.
+> split(): splits a string into a array of substring. 
+> toLowerCase(): convert the string into the lower case
+> toUpperCase(): conver the given string into the Upper case.
+> trim(): remove the whitespaces from the both ends 
+	
